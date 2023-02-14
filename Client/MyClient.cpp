@@ -3,7 +3,7 @@
 #include "MyClient.h"
 
 // ----------------------------------------------------------------------
-MyClient::MyClient(const QString& strHost, int nPort, QWidget* pwgt /*=0*/) : QWidget(pwgt), m_pImage(nullptr), m_baType(""), m_nNextBlockSize(0)
+MyClient::MyClient(const QString& strHost, int nPort, QWidget* pwgt /*=0*/) : QWidget(pwgt), m_pImage(nullptr), m_baType("")
 {
     m_pTcpSocket = new QTcpSocket(this);
 

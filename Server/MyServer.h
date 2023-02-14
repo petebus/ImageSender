@@ -14,7 +14,6 @@ Q_OBJECT
 private:
     QTcpServer*         m_ptcpServer = nullptr;
     QTextEdit*          m_ptxt = nullptr;
-    quint16             m_nNextBlockSize;
     QByteArray          m_baRR;
     QLabel*             m_pLabel = nullptr;
     QScrollArea*        m_pScrollArea = nullptr;

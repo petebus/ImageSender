@@ -3,7 +3,7 @@
 #include "MyServer.h"
 
 // ----------------------------------------------------------------------
-MyServer::MyServer(int nPort, QWidget* pwgt /*=0*/) : QWidget(pwgt), m_nNextBlockSize(0)
+MyServer::MyServer(int nPort, QWidget* pwgt /*=0*/) : QWidget(pwgt)
 {
     m_ptcpServer = new QTcpServer(this); 
     if (!m_ptcpServer->listen(QHostAddress::Any, nPort))
@@ -98,7 +98,6 @@ void MyServer::slotReadClient()
     m_pScrollArea->setWidget(m_pLabel);
     m_pScrollArea->setWidgetResizable(false);
 
-    m_nNextBlockSize = 0;
     m_baRR.clear();
 
     sendToClient(pClientSocket, "Server received your image");

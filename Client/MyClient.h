@@ -20,7 +20,6 @@ private:
     QByteArray      m_baRR;
     QLabel*         m_pLabel;
     QScrollArea*    m_pScrollArea;
-    quint16         m_nNextBlockSize;
 
 public:
     explicit MyClient   (const QString& strHost, int nPort, QWidget* pwgt = 0) ;
